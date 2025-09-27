@@ -10,7 +10,7 @@ function AppLayout() {
       <NavBar />
       <main className="p-[2rem_2.4rem_0rem] bg-[var(--color-mainback)] overflow-auto  ">
         <div className="mx-auto max-w-[120rem] flex flex-col gap-8 justify-center items-center mb-12">
-          {/* main context */}
+          {/* main contennt */}
           <Outlet />
           {/* my form at the end of page */}
           <ContactForm />

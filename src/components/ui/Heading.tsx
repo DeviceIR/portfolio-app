@@ -1,3 +1,4 @@
+// it has errors but works:D
 import { ReactNode, ElementType } from "react";
 
 interface HeadingProps {

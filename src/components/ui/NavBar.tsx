@@ -8,7 +8,6 @@ import Logo from "./Logo";
 export default function NavBar() {
   return (
     <div className=" w-[100%] bg-[var(--color-bg-nav)] text-[var(--color-text)] flex justify-between items-center px-4 ">
-      {/* logo ya name site */}
       {/* <Heading className="items-start">Portfolio WebSite</Heading> */}
       {/* <Logo color="var(--color-text)" width="40px" height="40px"></Logo> */}
 

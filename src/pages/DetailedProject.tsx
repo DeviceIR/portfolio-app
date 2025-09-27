@@ -9,7 +9,7 @@ export default function DetailedProject() {
   if (!project)
     return <p className="text-center mt-20 text-lg">Project not found</p>;
 
-  // Random details for rooms/services
+  // random details for rooms/services
   const randomRooms = Math.floor(Math.random() * 5) + 1;
   const randomServices = ["Wi-Fi", "Parking", "Gym", "Pool", "Pet Friendly"]
     .sort(() => 0.5 - Math.random())
@@ -25,19 +25,19 @@ export default function DetailedProject() {
         {project.title}
       </Heading>
 
-      {/* Hero Image */}
+      {/*  Image */}
       <img
         src={project.images[0]}
         alt={project.title}
         className="w-full h-80 md:h-[400px] object-cover rounded-2xl mb-6 shadow-md"
       />
 
-      {/* Project Description */}
+      {/* Project describtion */}
       <p className="text-lg md:text-xl mb-6 text-[var(--color-text)] leading-relaxed">
         {project.description}
       </p>
 
-      {/* Additional Details */}
+      {/*  Details */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[var(--color-bg-nav)] p-6 rounded-2xl shadow-inner">
         <div>
           <h2 className="text-2xl font-semibold mb-2 text-[var(--color-text)]">
@@ -62,7 +62,7 @@ export default function DetailedProject() {
         </div>
       </div>
 
-      {/* Gallery */}
+      {/* photos */}
       <div className="mt-8 grid grid-cols-2 md:grid-cols-3 gap-4">
         {project.images.slice(1).map((img, idx) => (
           <img

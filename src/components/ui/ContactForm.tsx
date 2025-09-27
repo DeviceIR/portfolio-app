@@ -58,15 +58,16 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="w-[80%] flex justify-center items-center flex-col p-6 bg-[var(--color-bg-nav)] text-[var(--color-text)] shadow space-y-4 rounded-2xl"
+      className="w-full max-w-3xl mx-auto flex flex-col p-6 bg-[var(--color-bg-nav)] text-[var(--color-text)] shadow space-y-4 rounded-2xl"
     >
-      {/* title of form */}
-      <Heading as="h2">Contact Us now</Heading>
+      {/* title */}
+      <Heading as="h2" className="text-2xl text-center">
+        Contact Us now
+      </Heading>
 
-      {/* input for name and email and mess */}
-      {/* <div className="flex flex-row gap-12 justify-center"> */}
-      <div className="grid grid-cols-[3fr_5fr] gap-6 w-[95%] ">
-        <div className="flex flex-col justify-start mb-16">
+      {/* inputs*/}
+      <div className="grid grid-cols-1 md:grid-cols-[3fr_5fr] gap-6 w-full">
+        <div className="flex flex-col justify-start mb-4 md:mb-16">
           <input
             type="text"
             name="name"
@@ -86,7 +87,7 @@ export default function ContactForm() {
             placeholder="Email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full border p-2 rounded mt-auto"
+            className="w-full border p-2 rounded mt-4 md:mt-auto"
           />
           <Heading as="h5" className="h-5 mx-2 py-2 tracking-widest">
             {errors.email && (
@@ -96,13 +97,13 @@ export default function ContactForm() {
         </div>
 
         {/* message box */}
-        <div className="w-full h-[100%]">
+        <div className="w-full">
           <textarea
             name="message"
             placeholder="Message"
             value={formData.message}
             onChange={handleChange}
-            className="w-full h-[12rem] border p-2 rounded"
+            className="w-full h-48 md:h-[12rem] border p-2 rounded"
           />
           <Heading as="h5" className="h-3 mx-2 py-1 tracking-widest">
             {errors.message && (
@@ -122,7 +123,7 @@ export default function ContactForm() {
 
         <button
           type="submit"
-          className="w-[12rem] bg-[var(--color-primary)] text-[var(--color-bg)]  py-2 rounded hover:bg-blue-700 mt-auto "
+          className="w-full md:w-48 bg-[var(--color-primary)] text-[var(--color-bg)] py-2 rounded hover:bg-blue-700 mt-auto transition"
         >
           Send
         </button>

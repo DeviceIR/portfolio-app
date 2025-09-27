@@ -5,7 +5,7 @@ import { projects } from "../data/projects";
 export default function HomePage() {
   return (
     <div className="w-full min-h-screen flex flex-col">
-      {/* Hero / Mission Section */}
+      {/* random mission prompt */}
       <section className="flex flex-col items-center justify-center text-center px-6 py-16 text-[var(--color-text)] bg-[var(--color-bg-nav)] shadow-sm mb-10 rounded-2xl">
         <Heading as="h1" className="text-4xl md:text-5xl mb-4">
           Our Mission
