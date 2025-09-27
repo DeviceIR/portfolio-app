@@ -17,7 +17,8 @@ function App() {
 
           <Route path="/homepage" element={<Homepage />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/detailedproject" element={<DetailedProject />} />
+          {/* <Route path="/detailedproject" element={<DetailedProject />} /> */}
+          <Route path="/projects/:id" element={<DetailedProject />} />
         </Route>
 
         {/* contact form & one notif app for later */}

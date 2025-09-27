@@ -28,6 +28,7 @@
   --color-highlight: #f59e0b;
   --color-muted: #6b7280;
   --color-freeze: #1f2937;
+  --color-mainback: #bac4cf;
 }
 .dark {
   --color-bg: #111827;
@@ -38,6 +39,7 @@
   --color-secondary: #34d399;
   --color-highlight: #fbbf24;
   --color-muted: #9ca3af;
+  --color-mainback: #a7b5c4;
 }
 
 /* ---------------------------
