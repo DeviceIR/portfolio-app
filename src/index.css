@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------------------------
+   Theme Variables (Light/Dark)
+--------------------------- */
+:root {
+  --color-bg: #f5f5f5;
+  --color-bg-nav: #e3e3e4;
+  --color-bg-content: #e3e3e4;
+  --color-text: #1f2937;
+  --color-primary: #6384f1;
+  --color-secondary: #10b981;
+  --color-highlight: #f59e0b;
+  --color-muted: #6b7280;
+  --color-freeze: #1f2937;
+}
+.dark {
+  --color-bg: #111827;
+  --color-bg-nav: #111827;
+  --color-bg-content: #2a2c30;
+  --color-text: #e5e7eb;
+  --color-primary: #b7d6ff;
+  --color-secondary: #34d399;
+  --color-highlight: #fbbf24;
+  --color-muted: #9ca3af;
+}
+
+/* ---------------------------
+   Global Typography & Body
+--------------------------- */
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------------------
+Links
+--------------------------- */
+a {
+  color: var(--color-primary);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--color-highlight);
+}
+
+/* ---------------------------
+Headings
+--------------------------- */
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1.2;
+    margin: 0;
+  }
+}
+
+/* ---------------------------
+  Buttons (Base)
+  --------------------------- */
+@layer base {
+  button {
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  button:hover {
+    border-color: var(--color-highlight);
+  }
+}
+
+/* ---------------------------
+  Utility Reset for Components
+  --------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+
+p {
+  margin: 0;
+}
+
+/* ---------------------------
+  Responsive Defaults
+  --------------------------- */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
